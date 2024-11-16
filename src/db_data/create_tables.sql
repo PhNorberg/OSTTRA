@@ -1,0 +1,8 @@
+CREATE TABLE messages (
+    id SERIAL PRIMARY KEY,
+    to_user TEXT NOT NULL,
+    message TEXT NOT NULL,
+    date_sent TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    read BOOLEAN DEFAULT FALSE
+);
+
