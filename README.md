@@ -96,3 +96,30 @@ http://localhost:8000/docs
 ```
 For more details on how to use Swagger UI, check the official documentation:
 [Swagger UI Documentation](https://swagger.io/tools/swagger-ui/)
+
+## Stop the service
+
+To stop the running containers without removing them
+
+```
+docker compose stop 
+```
+
+If you also want to remove the containers but keep the images
+
+```
+docker compose down
+```
+
+## Clean up
+
+If you want to remove everything related to the service, including containers, volumes and images
+
+**Remove Containers, Networks and Volumes**
+```
+docker compose down -v
+```
+**Remove Images**
+```
+docker rmi osttra-web postgres
+```
