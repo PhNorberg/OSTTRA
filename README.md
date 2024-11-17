@@ -8,15 +8,18 @@ Clone the git repository and move into the project directory
 
 ```bash
 git clone https://github.com/PhNorberg/OSTTRA.git
+```
+```
 cd OSTTRA
 ```
-
 Build and run the service
 
 ```
 docker compose build
+```
+```
 docker compose up -d
-``` 
+```
 
 ## Using the service
 
